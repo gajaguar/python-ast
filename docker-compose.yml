@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  main:
+    image: python:alpine
+    volumes:
+      - ./src:/app
+    working_dir: /app
+    command: python main.py
